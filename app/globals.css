@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-playfair: 'Playfair Display', Georgia, serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-warm-50 text-gray-800 font-sans;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-navy text-white font-medium rounded-lg
+           hover:bg-navy-light transition-colors duration-200 focus-visible:outline-none
+           focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border border-navy text-navy font-medium
+           rounded-lg hover:bg-navy hover:text-white transition-colors duration-200
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-gold text-white font-medium rounded-lg
+           hover:bg-gold-dark transition-colors duration-200 focus-visible:outline-none
+           focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wide;
+  }
+
+  .badge-active {
+    @apply badge bg-emerald-100 text-emerald-800;
+  }
+
+  .badge-pending {
+    @apply badge bg-amber-100 text-amber-800;
+  }
+
+  .badge-sold {
+    @apply badge bg-gray-100 text-gray-600;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100
+           hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300;
+  }
+
+  .section-label {
+    @apply text-gold font-semibold text-sm uppercase tracking-widest;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { @apply bg-warm-100; }
+::-webkit-scrollbar-thumb { @apply bg-gray-300 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-gray-400; }
