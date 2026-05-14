@@ -44,7 +44,7 @@ export default function Footer() {
               <p>5414 Leary Ave NW, Seattle, WA 98107</p>
               <p>
                 <a href="tel:+12065550172" className="hover:text-gold transition-colors">
-                  (206) 555-0172
+                  (701) 639-9361
                 </a>
               </p>
               <p>

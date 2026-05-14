@@ -79,7 +79,7 @@ export default function Header() {
                 isTransparent ? 'text-white/80 hover:text-white' : 'text-gray-600 hover:text-navy'
               }`}
             >
-              (206) 555-0172
+              (701) 639-9361
             </a>
             <Link href="/contact" className="btn-gold text-sm py-2 px-4">
               Schedule a Tour
@@ -125,7 +125,7 @@ export default function Header() {
             ))}
             <div className="px-4 pt-3 flex flex-col gap-2">
               <a href="tel:+12065550172" className="text-sm text-gray-600 font-medium">
-                (206) 555-0172
+                (701) 639-9361
               </a>
               <Link href="/contact" onClick={() => setMenuOpen(false)} className="btn-gold text-sm py-2.5 text-center">
                 Schedule a Tour
